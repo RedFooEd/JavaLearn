@@ -53,7 +53,16 @@ public class Airplane {
         setFuel(n + getFuel());
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(manufacture).append(" ").append(year).append(" ").append(length).append(" ").append(weight).append(" ").append(fuel);
+        return sb.toString();
+    }
+
     public void info() {
-        System.out.println("Изготовитель: " + manufacture + ", год выпуска: " + year + ", длина: " + length + ", вес: " + weight + ", количество топлива в баке: " + fuel);
+            System.out.println("Изготовитель: " + manufacture + ", год выпуска: " + year + ", длина: " + length + ", вес: " + weight + ", количество топлива в баке: " + fuel);
+
     }
 }
+
