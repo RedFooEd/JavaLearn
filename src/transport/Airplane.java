@@ -7,6 +7,15 @@ public class Airplane {
     private int weight;
     private int fuel;
 
+    public static void compareLength(Airplane a, Airplane b) {
+        if (a.length > b.length) {
+            System.out.println(a.manufacture + ", длинее");
+        } else {
+            System.out.println(b.manufacture + ", длинее");
+        }
+
+    }
+
     public Airplane(String manufacture, int year, int length, int weight, int fuel) {
         this.manufacture = manufacture;
         this.year = year;
